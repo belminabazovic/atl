@@ -250,6 +250,8 @@ h1 {
 #footerContainer {
 	padding: 4rem 0rem;
 	width: 90%;
+	display: flex;
+	justify-content: center;
 }
 
 }
