@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: #010101;
+}
+
+.manrope {
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 800;
+	letter-spacing: -1px;
+}
+
+
+
+#contentWrapper {
+	width: 100%;
+}
+
+#navigationContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0rem;
+}
+
+nav {
+	width: 90%;
+	max-width: 2000px;
+	display: grid;
+	grid-template-columns: auto max-content;
+	align-items: center;
+}
+
+#navLogo {
+	height: 10vw;
+	width: auto;
+	max-height: 40px;
+}
+
+#navListContainer {
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	grid-column-gap: 40px;
+}
+
+.navLink {
+	color: white;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.mainLink {
+	border-radius: 3px;
+	font-weight: 800;
+	padding: 0.8rem 2rem;
+	font-size: 0.8rem;
+	background-color: #0500ff;
+}
+
+#midContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#footerContainer {
+	padding: 2rem 2rem;
+	width: 100%;
+	max-width: 2000px;
+}
+
+.footerRow {
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
+	grid-column-gap: 20px;
+}
+
+.footerLink {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: #5a5a5a;
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: -0.025rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 699px) {
+
+
+#navListContainer {
+	display: none;
+}
+
+#midContainer {
+	height: max-content;
+	overflow-x: hidden;
+}
+
+#midContent {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+#introContainer {
+	padding: 2rem 0rem;
+}
+
+#showcaseContainer {
+	position: relative;
+	padding: 4rem 0rem 2rem 0rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+#mapContainer {
+	background-color: #101010;
+	border-radius: 1rem;
+	width: 90%;
+	aspect-ratio: 1 / 1.25;
+	height: auto;
+	position: relative;
+}
+
+#thoughtsContainer {
+	background-color: #060606;
+	border: 1px solid #090909;
+	position: absolute;
+	width: auto;
+	max-width: 70vw;
+	z-index: 4;
+	margin-top: -105%;
+	margin-right: -70%;
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-row-gap: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+
+#thoughtsTop {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto max-content;
+	align-items: center;
+}
+
+.thoughtsUser {
+	color: #555555;
+	font-size: 0.5rem;
+	font-weight: 700;
+}
+
+.thoughtsTime {
+	color: #353535;
+	font-size: 0.5rem;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+
+.thoughtsText {
+	color: #cccccc;
+	font-weight: 500;
+	font-size: 0.6rem;
+	letter-spacing: -0.5px;
+}
+
+#imageContainer {
+	position: absolute;
+	width: 6rem;
+	max-width: 1000px;
+	aspect-ratio: 1 / 1.2;
+	z-index: 5;
+	margin-bottom: -60%;
+	margin-left: -95%;
+	border-radius: 3px;
+	background-image: url('img/image0.jpeg');
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+}
+
+#imageFade {
+	width: 100%;
+	height: 100%;
+	background: rgb(6,6,6);
+	background: linear-gradient(0deg, rgba(6,6,6,1) 0%, rgba(6,6,6,0) 50%, rgba(6,6,6,0) 100%);
+}
+
+h1 {
+	text-align: center;
+}
+
+#footerContainer {
+	padding: 4rem 0rem;
+	width: 90%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+#navigationContainer {
+	padding: 2rem 2rem;
+}
+
+nav {
+	grid-template-columns: auto max-content max-content;
+	grid-column-gap: 40px;
+	width: 100%;
+}
+
+#midContainer {
+	height: calc(100vh - 12rem);
+	padding: 0rem 2rem;
+}
+
+#midContent {
+	width: 100%;
+	max-width: 2000px;
+	background-color: red;
+	position: relative;
+}
+
+#introContainer {
+	background-color: blue;
+	height: 100%;
+	width: 60%;
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4rem;
+	letter-spacing: -2px;
+}
+
+}

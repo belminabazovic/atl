@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: #010101;
+}
+
+.manrope {
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: white;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -1px;
+}
+
+
+
+#contentWrapper {
+	width: 100%;
+}
+
+#navigationContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0rem;
+}
+
+nav {
+	width: 90%;
+	max-width: 2000px;
+	display: grid;
+	grid-template-columns: auto max-content;
+	align-items: center;
+}
+
+#navLogo {
+	height: 10vw;
+	width: auto;
+	max-height: 40px;
+}
+
+#navListContainer {
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	grid-column-gap: 40px;
+}
+
+.navLink {
+	color: white;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.mainLink {
+	border-radius: 3px;
+	font-weight: 800;
+	padding: 0.8rem 2rem;
+	font-size: 0.8rem;
+	background-color: #0500ff;
+}
+
+#midContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#midContent {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 1rem;
+}
+
+#contactBtn {
+	font-size: 1rem;
+	color: #5a5a5a;
+	letter-spacing: -0.5px;
+	font-weight: 400;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#footerContainer {
+	padding: 2rem 2rem;
+	width: 100%;
+	max-width: 2000px;
+}
+
+.footerRow {
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
+	grid-column-gap: 20px;
+}
+
+.footerLink {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: #5a5a5a;
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: -0.025rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 699px) {
+
+
+#navListContainer {
+	display: none;
+}
+
+#midContainer {
+	height: calc(100vh - 20rem);
+}
+
+#footerContainer {
+	padding: 4rem 0rem;
+	width: 90%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+#navigationContainer {
+	padding: 2rem 2rem;
+}
+
+nav {
+	grid-template-columns: auto max-content max-content;
+	grid-column-gap: 40px;
+	width: 100%;
+}
+
+#midContainer {
+	height: calc(100vh - 12rem);
+}
+
+#midContent {
+	width: 80%;
+}
+
+h1 {
+	font-size: 4rem;
+	letter-spacing: -2px;
+}
+
+}
