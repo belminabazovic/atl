@@ -218,30 +218,55 @@ footer {
 	letter-spacing: -0.5px;
 }
 
-#imageContainer {
+#postContainer {
 	position: absolute;
 	width: 7.5rem;
 	max-width: 1000px;
-	aspect-ratio: 1 / 1.2;
 	z-index: 5;
-	margin-bottom: -60%;
+	margin-bottom: -85%;
 	margin-left: -70%;
 	border-radius: 3px;
-	background-image: url('img/image0.jpeg');
-	background-position: center bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
+	border: 1px solid #090909;
+	background-color: #060606;
+	padding: 0.25rem;
+	padding-bottom: 0.40rem;
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-row-gap: 0.40rem;
 }
 
-#imageFade {
+#imageContainer {
 	width: 100%;
-	height: 100%;
-	background: rgb(6,6,6);
-	background: linear-gradient(0deg, rgba(6,6,6,1) 0%, rgba(6,6,6,0) 50%, rgba(6,6,6,0) 100%);
+	aspect-ratio: 1 / 1.1; 
+	background-image: url('img/image0.jpeg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	border-radius: 3px;
 }
+
+#postInfoContainer {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 0.1rem;
+}
+
+.postUser {
+	color: #cccccc;
+	font-size: 0.6rem;
+	font-weight: 700;
+}
+
+.postTime {
+	color: #353535;
+	font-size: 0.5rem;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+
 
 h1 {
 	text-align: center;
