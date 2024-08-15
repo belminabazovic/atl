@@ -212,7 +212,7 @@ footer {
 .mapImage {
 	height: 150%;
 	margin-right: -30%;
-	filter: invert(0%) sepia(6%) saturate(24%) hue-rotate(1deg) brightness(5%) contrast(86%);
+	filter: invert(0%) sepia(6%) saturate(24%) hue-rotate(1deg) brightness(1%) contrast(86%);
 }
 
 #mapOverlayContainer {
